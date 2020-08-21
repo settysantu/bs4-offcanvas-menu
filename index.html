@@ -30,14 +30,18 @@
 			<!-- Nested Container Starts -->
 				<div class="container px-md-0">
 				<!-- Navbar Toggler Starts -->
-					<button class="navbar-toggler ml-auto rounded-0" type="button" data-toggle="collapse" data-target=".navbar-cat-collapse" aria-controls=".navbar-cat-collapse" aria-expanded="false" aria-badge="Toggle navigation">
+					<button class="navbar-toggler ml-auto rounded-0 d-none" type="button" data-toggle="collapse" data-target=".navbar-cat-collapse" aria-controls=".navbar-cat-collapse" aria-expanded="false" aria-badge="Toggle navigation">
 						<span class="fa fa-bars"></span>
 					</button>
+					<div class="mobile-menu ml-auto rounded-0 d-block d-md-none">
+						<a href="#" class="text-white" data-toggle="collapse" data-target=".navbar-collapse" aria-controls=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></a>
+					</div>
 				<!-- Navbar Toggler Ends -->
 				<!-- Navbar Cat collapse Starts -->
 					<div class="collapse navbar-collapse navbar-cat-collapse animation">
 					<!-- Nav Links Starts -->
 						<ul class="nav navbar-nav">
+							<li class="d-block d-md-none text-right"><a href="#" class="text-white btn-close" data-toggle="collapse" data-target=".navbar-collapse" aria-controls=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-close text-big-1"></i></a></li>
 							<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">New In</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">Womens</a></li>
@@ -62,6 +66,9 @@
 		<!-- Main Menu Ends -->
 		</div>
 	<!-- Container Ends -->
+	<!-- Screen Overlay Starts -->
+		<div class="screen-overlay"></div>
+	<!-- Screen Overlay Ends -->
 	<!-- Template JS Files -->
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/popper.min.js"></script>

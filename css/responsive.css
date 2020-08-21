@@ -1,5 +1,36 @@
 /* Extra small devices - xs (portrait phones, less than 576px) */
-@media (max-width: 575px) { 
+@media (max-width: 575px) {
+
+/* Main Menu Styles Starts */
+
+	.main-menu .navbar-toggler,
+	.main-menu .navbar-toggler:hover,
+	.main-menu .navbar-toggler:focus {
+		outline: none;
+	}
+	.main-menu li.dropdown > a.nav-link > .fa {
+		float: right;
+	}
+	.main-menu .navbar-collapse {
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 20px;
+		width: 45%;
+		height: 100%;
+		background-color: #1a1a1a;
+	}
+	.main-menu .navbar-collapse.collapsing {
+		left: -65%;
+		transition: height 0s ease;
+	}
+	.main-menu .navbar-collapse.show {
+		left: 0;
+		transition: left 500ms ease-in-out;
+	}
+	.main-menu .navbar-toggler.collapsed ~ .navbar-collapse {
+		transition: left 500ms ease-in-out;
+	}
 
 /* Generic Styles Starts */
 
@@ -12,16 +43,47 @@
 	.img-center-xs {
 		margin-left: auto;
 		margin-right: auto;
-	}	
+	}
 
 	.text-xs-left   { text-align: left;   }
 	.text-xs-center { text-align: center; }
-	.text-xs-right  { text-align: right;  }			
+	.text-xs-right  { text-align: right;  }
 
 }
 
 /* Small devices - sm (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) { 
+@media (min-width: 576px) and (max-width: 767px) {
+
+/* Main Menu Styles Starts */
+
+	.main-menu .navbar-toggler,
+	.main-menu .navbar-toggler:hover,
+	.main-menu .navbar-toggler:focus {
+		outline: none;
+	}
+	.main-menu li.dropdown > a.nav-link > .fa {
+		float: right;
+	}
+	.main-menu .navbar-collapse {
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 20px;
+		width: 35%;
+		height: 100%;
+		background-color: #1a1a1a;
+	}
+	.main-menu .navbar-collapse.collapsing {
+		left: -75%;
+		transition: height 0s ease;
+	}
+	.main-menu .navbar-collapse.show {
+		left: 0;
+		transition: left 500ms ease-in-out;
+	}
+	.main-menu .navbar-toggler.collapsed ~ .navbar-collapse {
+		transition: left 500ms ease-in-out;
+	}
 
 /* Generic Styles Starts */
 
@@ -33,8 +95,8 @@
 }
 
 /* Medium devices - md (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) { 
-	
+@media (min-width: 768px) and (max-width: 991px) {
+
 /* Generic Styles Starts */
 
 	.img-center-md {
@@ -45,18 +107,18 @@
 }
 
 /* Large devices - lg (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) { 
+@media (min-width: 992px) and (max-width: 1199px) {
 
 /* Generic Styles Starts */
 
 	.img-center-lg {
 		margin-left: auto;
 		margin-right: auto;
-	}	
+	}
 
 }
 
 /* Extra large devices - xl (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 }
